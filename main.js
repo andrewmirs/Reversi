@@ -26,16 +26,30 @@ var oppPieceObj = {
     'b': 'w',
     'w': 'b'
 }
+
+var oppositeDirection = {
+    'up': 'down',
+    'upRight': 'downLeft',
+    'right': 'left',
+    'downRight': 'upLeft',
+    'down': 'up',
+    'downLeft': 'upRight',
+    'left': 'right',
+    'upLeft': 'downRight'
+}
+
+var counterObj={};
+
 var directionToCheck = null;
 
 function buildGameBoardArray(){
     gameBoardArray = [
         ['', '', '', '', '', '', '', '' ],
-        ['', '', '', '', '', '', '', '' ],
-        ['', '', '', '', '', '', '', '' ],
-        ['', '', '', 'w', 'b', '', '', '' ],
+        ['', 'b', '', '', '', '', '', '' ],
+        ['', '', 'w', '', '', '', '', '' ],
+        ['', '', 'w', 'w', 'b', '', '', '' ],
+        ['', '', '', 'w', 'w', '', '', '' ],
         ['', '', '', 'b', 'w', '', '', '' ],
-        ['', '', '', '', '', '', '', '' ],
         ['', '', '', '', '', '', '', '' ],
         ['', '', '', '', '', '', '', '' ]
     ]
@@ -84,17 +98,51 @@ function checkAdjacentTiles(){
         var adjTileRow = destRow + checkAdjacentObj[key][0];
         var adjTileCol = destCol + checkAdjacentObj[key][1];
         if(adjTileRow > 7 || adjTileRow < 0){
-            break;
+            continue;
         }
         if(adjTileCol > 7 || adjTileCol < 0){
-            break;
+            continue;
         }
         if(gameBoardArray[adjTileRow][adjTileCol] === oppPieceObj[currentColor]){
             directionToCheck = key;
         }
-        if(directionToCheck){
+        if(directionToCheck != null){
             console.log(directionToCheck);
+            directionCheck(directionToCheck, adjTileRow, adjTileCol);
         }
         directionToCheck = null;    
     }
+}
+
+function directionCheck(direction, adjTileRow, adjTileCol){
+    var nextAdjTileRow = adjTileRow + checkAdjacentObj[direction][0];
+    var nextAdjTileCol = adjTileCol + checkAdjacentObj[direction][1];
+    if(nextAdjTileRow > 7 || nextAdjTileRow  < 0){
+        return;
+    }
+    if(nextAdjTileCol > 7 || nextAdjTileCol < 0){
+        return;
+    }
+    if (counterObj[direction] === undefined){
+        counterObj[direction] = 1;
+    } else {
+        counterObj[direction] += 1;
+    }
+    if(gameBoardArray[nextAdjTileRow][nextAdjTileCol] === oppPieceObj[currentColor]){
+        directionCheck(direction, nextAdjTileRow, nextAdjTileCol);
+    }
+    if(gameBoardArray[nextAdjTileRow][nextAdjTileCol] === currentColor){
+        console.log('We can flip ' + counterObj[direction] + ' coins to the ' + direction);
+        // call flipCoin();
+    }
+    return
+}
+
+//Places coin on original event.currentTarget
+//Flips successive coins in the directions stored in counterObj
+
+function flipCoin(startingPoint, direction, numberofCoins){
+    var nextTileRow = destRow;
+    var nextTileCol = destCol;
+    gameBoardArray[nextTileRow][nextTileCol] = currentColor;
 }
