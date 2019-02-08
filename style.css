@@ -2029,6 +2029,165 @@ html, body{
 
 }   
 
+@media (min-width: 850px) and (min-height: 850px) {
+                /* Desktop MD */
+
+    .intro-modal {
+        top: 15%;
+        left: 20%;
+        height: 70%;
+        width: 60%;
+    }
+
+    .startlobbyinput, .joinlobbyinput {
+        text-align: center;
+        margin: 0 33px;
+        font-size: 15px;
+    }
+
+    .input-cont {
+        top: 58%;
+        position: relative;
+    }
+
+    .lobbysettings {
+        height: 100%;
+        width: 94%;
+        left: 4.3%;
+        bottom: 18%;
+    }
+     
+    .gameboard {
+        height: 50vw;
+        width: 50vw;
+        top: 19%;
+        left: 13%;
+    }
+
+    .title-bar {
+        position: absolute;
+        top: 2%;
+        left: 35%;
+        height: 13%;
+        width: 31%;
+    }
+
+    .pointsboard-white {
+        height: 12vw;
+        width: 12vw;
+        top: 30%;
+        left: 19%;
+    }
+
+    .pointsboard-black {
+        height: 12vw;
+        width: 12vw;
+        top: 30%;
+        left: 7%;
+    }
+
+    .pointsB {
+        font-size: 5vmin;
+        top: 24%;
+    }
+
+    .pointsW {
+        font-size: 5vmin;
+        top: 24%;
+    }
+
+    .pass {
+        bottom: 8%;
+        left: 26%;
+        height: 5%;
+        width: 6%;
+    }
+
+    /* Clock */
+
+    .timer {
+        position: absolute;
+        bottom: 4%;
+        height: 12%;
+        width: 30%;
+        left: 35%;
+    }
+
+    .black-minutes {
+        height: 10%;
+        width: 10%;
+        left: 14%;
+        top: 38%;
+        font-size: 5vmin;
+    }
+
+    .black-seconds {
+        height: 10%;
+        width: 10%;
+        left: 19%;
+        top: 38%;
+        font-size: 5vmin;
+    }
+
+    .white-minutes {
+        height: 10%;
+        width: 10%;
+        left: 26%;
+        top: 38%;
+        font-size: 5vmin;
+    }
+
+    .white-seconds {
+        height: 10%;
+        width: 10%;
+        left: 31%;
+        top: 38%;
+        font-size: 5vmin;
+    }
+
+    /* Rule and Win Modal */
+
+    .reset {
+        top: 3%;
+        right: 5%;
+        height: 4%;
+        width: 8%;
+    }
+
+    .reset > p {
+        bottom: 60%;
+        left: 59%;
+    }
+
+    .rule-modal {
+        position: absolute;
+        top: 21%;
+        left: 19%;
+        height: 50%;
+        width: 60%;
+    }
+
+    .rules {
+        top: 7%;
+        right: 4%;
+        height: 4%;
+        width: 8%;
+    }
+
+    .questionmark {
+        bottom: -3%;
+        left: 17%;
+    }
+
+    .pass {
+        bottom: 8%;
+        left: 17%;
+        height: 5%;
+        width: 6%;
+    }
+
+}   
+
 
 @media (min-width: 900px) and (min-height: 500px) {
                 /* Desktop MD */
