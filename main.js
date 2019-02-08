@@ -118,9 +118,11 @@ function joinFirebaseLobby(){
     databaseLobby = database.ref(lobbyName);
     databaseLobby.on("value", gotData);
 }
+
 function error(err){
     console.log(err)
 }
+
 function gotData(data){
     var dataObj = data.val();
     gameBoardArray = dataObj.gameArray;
@@ -194,7 +196,6 @@ function buildGameBoard(){
 
 function handleBoardClick(){
     if(myPlayerColor !== playerTurn){
-        console.log('not your turn')
         return;
     }
     if(blackTurn){
@@ -267,7 +268,6 @@ function changePieces(direction, count){
     for(var i = 0; i < count; i++){
         changedRow = changedRow + checkAdjacentObj[direction][0];
         changedCol = changedCol + checkAdjacentObj[direction][1];
-        console.log(direction, count, 'clicked cord', destRow + ' ' + destCol, 'changed', changedRow + '' + changedCol, gameBoardArray)
         gameBoardArray[changedRow][changedCol] = currentColor;   
     }
     whitePassFlag = false;
@@ -381,7 +381,6 @@ function checkWinCondition(white, black){
             winningPlayer = 'Tie'
             return;
         }
-        console.log('check win switchturns')
         switchTurns();
     }
 }
@@ -418,7 +417,6 @@ function checkDoublePass(){
 }
 
 function playAgain(){
-    console.log('play again')
     hideWinModal(); 
     resetBoard();
 }
