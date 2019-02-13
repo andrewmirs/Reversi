@@ -9,13 +9,13 @@ Team: Andrew Mirshafiee, Collin Stewart and Jacob Taylor
 
 Initial Requirements:
 
-- Must have at least 2 players
-- <a href="https://www.yourturnmyturn.com/rules/reversi.php" target="_blank">Basically follow reversi game play rules</a>(ie alternating players, bracketting a color with another flips that color.
-- Player-selected gameboard size between 3 or at least 5 size game board
-- Players must be displayed.  The turn of the player must be displayed
-- Win condition determined when all available playable spaces are taken
-- Current winner must be displayed.  Ie if black has more, black is showing as "Winning"
-- MUST use Trello for task management
+- Must have at least 2 players.
+- <a href="https://www.yourturnmyturn.com/rules/reversi.php" target="_blank">Follow the Reversi game play rules</a> (i.e. alternating players, bracketing a color with another flips that color.
+- Player-selected gameboard size at least 5x5.
+- Players must be displayed.  The turn of the player must be displayed.
+- Win condition determined when all available playable spaces are taken.
+- Current winner must be displayed.  (i.e. If black has more, black is shown as "Winning")
+- MUST use Trello for task management.
 - Mystery Requirement - Coming Thursday
 
 
