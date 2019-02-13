@@ -234,6 +234,10 @@ html, body{
     color: maroon;
 }
 
+#pass-white {
+    left: 70%;
+}
+
 /*** Clock ***/
 
 .timer{
@@ -1726,7 +1730,8 @@ html, body{
     }
 
     .intro-modal > h1 {
-        font-size: 4vmin
+        font-size: 4vmin;
+        top: 0;
     }
 
     .play-options {
@@ -2238,7 +2243,7 @@ html, body{
     .intro-modal {
         top: 15%;
         left: 20%;
-        height: 90%;
+        height: 80%;
         width: 60%;
     }
 
@@ -4822,6 +4827,10 @@ html, body{
 
 @media (min-width: 1400px) and (min-height: 700px) {
                 /* Desktop XL */
+
+    .intro-modal > h1 {
+        top: 0%;
+    }
 
     .startlobbyinput, .joinlobbyinput {
         text-align: center;
