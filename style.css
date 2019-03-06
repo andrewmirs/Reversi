@@ -5231,7 +5231,11 @@ html, body{
 
 
 
-@media (min-width: 320px) and (min-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen 
+and (min-device-width: 320px) 
+and (min-device-height: 480px) 
+and (-webkit-min-device-pixel-ratio: 2) 
+and (orientation: portrait) {
                                         /* iPhone 4 */
 
     .toosmall-modal{
@@ -5462,7 +5466,10 @@ html, body{
 
 }
 
-@media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen 
+and (min-device-width: 480px) 
+and (-webkit-min-device-pixel-ratio: 2) 
+and (orientation: landscape) {
                                     /* iPhone 4 */
 
     .toosmall-modal{
@@ -5613,7 +5620,11 @@ html, body{
 
 }
 
-@media (min-width: 320px) and (min-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen 
+and (min-device-width: 320px) 
+and (min-device-height: 568px) 
+and (-webkit-min-device-pixel-ratio: 2) 
+and (orientation: portrait) {
                                             /* iPhone 5/SE */
 
     .toosmall-modal{
@@ -5848,7 +5859,10 @@ html, body{
 
 }
 
-@media (min-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen 
+and (min-device-width: 568px) 
+and (-webkit-min-device-pixel-ratio: 2) 
+and (orientation: landscape) {
                                     /* iPhone 5/SE */
 
     .toosmall-modal{
@@ -5955,7 +5969,11 @@ html, body{
     
 }
 
-@media (min-width: 375px) and (min-height: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen 
+and (min-device-width: 375px) 
+and (min-device-height: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) 
+and (orientation: portrait) {
                                                 /* iPhone 6/7/8 */
 
     .toosmall-modal{
@@ -6190,7 +6208,10 @@ html, body{
 
 }
 
-@media (min-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen 
+and (min-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
                                     /* iPhone 6/7/8 */
 
     .toosmall-modal{
@@ -6301,7 +6322,11 @@ html, body{
 
 }
 
-@media (min-width: 414px) and (min-height: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media only screen 
+and (min-device-width: 414px) 
+and (min-device-height: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) 
+and (orientation: portrait) {
                                             /* iPhone 6/7/8 Plus */
 
     .toosmall-modal{
@@ -6537,7 +6562,10 @@ html, body{
 
 }
 
-@media (min-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen 
+and (min-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) 
+and (orientation: landscape) {
                                 /* iPhone 6/7/8 Plus */
 
     .toosmall-modal{
@@ -6657,7 +6685,11 @@ html, body{
 
 }
 
-@media (min-width: 375px) and (min-height: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media only screen 
+and (min-device-width: 375px) 
+and (min-device-height: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) 
+and (orientation: portrait) {
                                                 /* iPhone X */
 
     .toosmall-modal{
@@ -6889,7 +6921,10 @@ html, body{
 
 }
 
-@media (min-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen 
+and (min-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) 
+and (orientation: landscape) {
                                     /* iPhone X */
 
     .toosmall-modal{
@@ -7068,7 +7103,12 @@ html, body{
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (min-device-height: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1)
+and (orientation: portrait) {
                                                 /* iPad */
 
     .toosmall-modal{
@@ -7300,7 +7340,12 @@ html, body{
 
 }
 
-@media (min-width: 1024px) and (max-width: 1024px) and (min-height: 768px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+@media only screen 
+and (min-device-width: 1024px) 
+and (max-device-width: 1024px) 
+and (min-device-height: 768px) 
+and (-webkit-min-device-pixel-ratio: 1) 
+and (orientation: landscape) {
                                                  /* iPad */
 
     .toosmall-modal{
@@ -7486,7 +7531,11 @@ html, body{
 
 }
 
-@media (min-width: 1024px) and (min-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen 
+and (min-device-width: 1024px) 
+and (min-device-height: 1366px) 
+and (-webkit-min-device-pixel-ratio: 2) 
+and (orientation: portrait) {
                                                 /* iPad Pro */
 
     .toosmall-modal{
@@ -7718,7 +7767,11 @@ html, body{
 
 }
 
-@media (min-width: 1366px) and (min-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen 
+and (min-device-width: 1366px) 
+and (min-device-height: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2) 
+and (orientation: landscape) {
                                                 /* iPad Pro */
 
     .toosmall-modal{
