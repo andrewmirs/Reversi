@@ -580,18 +580,6 @@ html, body{
                                     /** Media Queries for Desktops and Laptops **/
 
 
-@media (max-width: 499px) {
-    .toosmall-modal{
-        display: inline;
-    }
-}
-
-@media (max-height: 349px) {
-    .toosmall-modal{
-        display: inline;
-    }
-}
-
 @media (min-width: 550px) and (min-height: 350px) {
                 /* Desktop XS */
 
